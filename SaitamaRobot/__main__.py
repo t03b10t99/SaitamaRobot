@@ -220,35 +220,37 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add me",
+                                text="➕ Tambahkan",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
                             ),
                             InlineKeyboardButton(
-                                text="🚑 Support",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="Bantuan ⚔️",
+                                url="t.me/{}?start=help".format(
+                                    context.bot.username,
+                                ),
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🔔 Updates",
-                                url="https://t.me/OnePunchUpdates",
+                                text="👥 Group",
+                                url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
 
                             InlineKeyboardButton(
-                                text="🧾 Getting Started",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="Channel 📢",
+                                url="https://t.me/GB_BorutoID",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                text="🧑🏻‍💻 Owner",
+                                url="https://t.me/GB_03101999",
                             ),
                             InlineKeyboardButton(
-                                text="☠️ Kaizoku Network",
-                                url="https://t.me/Kaizoku/4",
+                                text="Donasi 🎁",
+                                url="https://saweria.co/FlashSupport",
                             ),
                         ],
                     ],
