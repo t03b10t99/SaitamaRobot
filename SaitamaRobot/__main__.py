@@ -71,33 +71,35 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey hi {}, I'm {}!
-I am an Anime themed group management bot.
-Built by weebs for weebs, I specialize in managing anime eccentric communities!
+Hallo {}, saya {}!
+Dikelolah oleh [ɢᴏᴏᴅ ʙᴏʏs](https://t.me/GB_03101999)
+┈───────────────────────┈
+➠ Tambahkan saya ke group mu dan jadikan saya admin!!
+➠ Ketik /help untuk melihat fitur-fitur yang bisa digunakan untuk membantu memanagement grup kamu.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hai nama saya adalah *{}*.
+Saya bot management grup telegram dengan beberapa fitur yang bermanfaat! Lihatlah panduan dibawah ini untuk mendapatkan gambaran tentang beberapa hal yang dapat saya bantu.
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+Perintah utama tersedia!!:
+ ➠ /start: Mulai bot ini
+ ➠ /help: PM Anda pesan ini.
+ ➠ /help <module name>: PM info Anda tentang modul itu.
+ ➠ /donate: Informasi tentang cara berdonasi
+ ➠ /settings:
+     ➥ Di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+     ➥ Di dalam Group: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
 
 
 {}
-And the following:
+Dan berikut Command-Command yang dapat digunakan dalam grup:
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+    "" if not ALLOW_EXCL else "\nSemua perintah bisa digunakan dengan awalan / atau !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/632199a2fa6bc72f3a072.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
@@ -223,29 +225,27 @@ def start(update: Update, context: CallbackContext):
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
-                            ),
-                        ],
-                        [
                             InlineKeyboardButton(
                                 text="🚑 Support",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
+                        ],
+                        [
                             InlineKeyboardButton(
                                 text="🔔 Updates",
                                 url="https://t.me/OnePunchUpdates",
                             ),
-                        ],
-                        [
+
                             InlineKeyboardButton(
                                 text="🧾 Getting Started",
                                 url="https://t.me/OnePunchUpdates/29",
                             ),
+                        ],
+                        [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
                                 url="https://github.com/AnimeKaizoku/SaitamaRobot",
                             ),
-                        ],
-                        [
                             InlineKeyboardButton(
                                 text="☠️ Kaizoku Network",
                                 url="https://t.me/Kaizoku/4",
