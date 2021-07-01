@@ -1,5 +1,3 @@
-# COPYRIGHT (C) BY LEGENDX2222 AND PROBOYX
-from SaitamaRobot.events import register
 from SaitamaRobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
