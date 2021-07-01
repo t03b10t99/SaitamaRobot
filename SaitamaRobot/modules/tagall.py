@@ -1,32 +1,7 @@
-import html
-from typing import Optional, List
-import re
+from pyrogram import filters
 
-from telegram import Message, Chat, Update, User, ChatPermissions
-
-from SaitamaRobot import TIGERS, WOLVES, dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import (
-    bot_admin,
-    is_user_admin,
-    user_admin,
-    user_admin_no_reply,
-)
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.sql import antiflood_sql as sql
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import mention_html
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.sql.approve_sql import is_approved
+from Saitamarobor.pyrogramee.pluginshelper import admins_only, get_text
+from Saitamarobot import pbot
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
