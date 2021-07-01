@@ -94,15 +94,14 @@ Perintah utama tersedia!!:
 Dan berikut Command-Command yang dapat digunakan dalam grup:
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nSemua perintah bisa digunakan dengan awalan / atau !.\n",
+    "" if not ALLOW_EXCL else "\nSemua perintah bisa digunakan dengan awalan / atau !\n",
 )
 
 SAITAMA_IMG = "https://telegra.ph/file/632199a2fa6bc72f3a072.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """Hai Senang Rasanya Anda Mau Berdonasi
+Donasi Pulsa: 089525658633
+Donasi E-Wallet: [SAWERIA](https://saweria.co/FlashSupport)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
