@@ -1,5 +1,10 @@
-from pyrogram import filters
+import datetime
+import html
+import textwrap
 
+import bs4
+import jikanpy
+import requests
 from SaitamaRobor.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
 
