@@ -18,6 +18,13 @@ __help__ = """
 • /splay (song name) - To Play the song you requested via jio saavn
 • /ytplay (song name) - To Play the song you requested via youtube in more detail
 
+=>> Song downloaders 🎵
+
+• /song (song name) : To Download songs on YouTube
+• /vsong (song name) : To Download Videos on YouTube with details
+• /deezer (song name) : To Download songs from deezer
+• /saavn (song name) : To Download songs from
+
 =>> Playback ⏯
 
 • /player: Open the Player settings menu
