@@ -1,7 +1,7 @@
 from pyrogram import filters
 
-from Saitamarobor.pyrogramee.pluginshelper import admins_only, get_text
-from Saitamarobot import pbot
+from SaitamaRobor.pyrogramee.pluginshelper import admins_only, get_text
+from SaitamaRobot import pbot
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
