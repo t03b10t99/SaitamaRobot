@@ -225,6 +225,7 @@ def start(update: Update, context: CallbackContext):
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
+                            ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
