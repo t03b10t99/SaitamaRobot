@@ -90,7 +90,6 @@ Perintah utama tersedia!!:
  ➠ /settings:
      ➥ Di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
      ➥ Di dalam Group: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
-
 {}
 Dan berikut Command-Command yang dapat digunakan dalam grup:
 """.format(
